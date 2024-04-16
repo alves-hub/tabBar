@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LeI-mt-1WK">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pedidos-->
+        <scene sceneID="QNE-ze-I64">
+            <objects>
+                <viewController id="gaq-hk-79P" customClass="Pedidos" customModule="primeiroTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7by-wJ-B7g">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="amW-6H-hWl"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pedidos" image="arrow.up.bin" catalog="system" id="up7-0a-giA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1X-CD-zvt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="333"/>
+        </scene>
+        <!--Cadastro-->
+        <scene sceneID="J78-cR-Uwq">
+            <objects>
+                <viewController id="CeJ-Ss-hO6" customClass="Cadastro" customModule="primeiroTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XoY-je-eIc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sjK-zj-l9v"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cadastro" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="VlQ-pO-K5S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etg-4N-7n5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-468"/>
+        </scene>
+        <!--pagamentos-->
+        <scene sceneID="AF1-E0-nS4">
+            <objects>
+                <viewController id="gLx-Tm-2hp" customClass="Pagamentos" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8s-hn-xSr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lim-k3-NHE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pagamentos" image="character.book.closed" catalog="system" id="qxp-27-oRU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPn-Ro-cgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="-57"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mR8-A9-1cJ">
+            <objects>
+                <tabBarController id="LeI-mt-1WK" customClass="TabBarController" customModule="primeiroTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yvc-lD-aBz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CeJ-Ss-hO6" kind="relationship" relationship="viewControllers" id="57m-vv-Fe6"/>
+                        <segue destination="gaq-hk-79P" kind="relationship" relationship="viewControllers" id="wku-0J-uZl"/>
+                        <segue destination="gLx-Tm-2hp" kind="relationship" relationship="viewControllers" id="Fqh-lx-z4d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhw-I2-NkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="-57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.bin" catalog="system" width="128" height="92"/>
+        <image name="character.book.closed" catalog="system" width="115" height="128"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="86"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
